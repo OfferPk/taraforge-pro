@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)" />
+
+  <!-- Window Header -->
+  <rect x="30" y="30" width="1140" height="60" rx="8" fill="#1f2937" />
+  <circle cx="60" cy="60" r="7" fill="#ef4444" />
+  <circle cx="85" cy="60" r="7" fill="#f59e0b" />
+  <circle cx="110" cy="60" r="7" fill="#10b981" />
+
+  <text x="145" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold">TARAForge Pro — ISO/SAE 21434 Automotive Cybersecurity Engineering Studio</text>
+  <rect x="940" y="45" width="210" height="30" rx="4" fill="url(#accentGrad)" />
+  <text x="955" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">ISO 21434 / UN R155</text>
+
+  <!-- Main Grid Layout -->
+  <!-- Left Panel: Scenario Configuration -->
+  <rect x="30" y="110" width="680" height="580" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  <text x="50" y="145" fill="#f3f4f6" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">Threat Scenario &amp; Attack Path Configuration</text>
+  <rect x="510" y="130" width="180" height="22" rx="4" fill="#7f1d1d" />
+  <text x="522" y="146" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">SCENARIO: ADAS_RADAR_01</text>
+
+  <!-- Content Box -->
+  <rect x="50" y="170" width="640" height="500" rx="6" fill="#090d16" stroke="#1f2937" stroke-width="1" />
+  
+  <g font-family="monospace" font-size="12">
+    <text x="70" y="205" fill="#60a5fa" font-weight="bold">=== ASSET &amp; CYBERSECURITY PROPERTY (CLAUSE 9.4) ===</text>
+    <text x="70" y="230" fill="#a7f3d0">Target Asset            : Front Radar Object Detection Stream</text>
+    <text x="70" y="250" fill="#a7f3d0">Security Property       : INTEGRITY (Compromised via CAN FD injection)</text>
+    <text x="70" y="270" fill="#fbbf24">Threat Title            : Injection of Phantom Obstacles into ADAS ECU</text>
+
+    <text x="70" y="310" fill="#60a5fa" font-weight="bold">=== ATTACK FEASIBILITY RATING (AFR) (ANNEX G) ===</text>
+    <text x="70" y="335" fill="#d1d5db">Elapsed Time            : &lt;= 1 Month (1 pt)</text>
+    <text x="70" y="355" fill="#d1d5db">Specialist Expertise    : Proficient (3 pts)</text>
+    <text x="70" y="375" fill="#d1d5db">Knowledge of Item       : Restricted / OEM Internal (3 pts)</text>
+    <text x="70" y="395" fill="#d1d5db">Window of Opportunity   : Moderate (4 pts) | Equipment: Standard (0 pt)</text>
+    <text x="70" y="415" fill="#f87171" font-weight="bold">Total Attack Potential  : 11 Points -&gt; FEASIBILITY: HIGH (Score 4)</text>
+
+    <text x="70" y="455" fill="#60a5fa" font-weight="bold">=== DAMAGE SCENARIO &amp; SFOP IMPACT (CLAUSE 9.5) ===</text>
+    <text x="70" y="480" fill="#f87171">Safety Impact (S)       : SEVERE (Fatal crash due to emergency braking)</text>
+    <text x="70" y="500" fill="#fbbf24">Financial Impact (F)    : MAJOR (Product recall &amp; fleet liability)</text>
+    <text x="70" y="520" fill="#f87171">Operational Impact (O)  : SEVERE (Critical steering/brake degradation)</text>
+    <text x="70" y="540" fill="#9ca3af">Privacy Impact (P)      : NEGLIGIBLE (No PII compromised)</text>
+    <text x="70" y="560" fill="#f87171" font-weight="bold">Overall Impact Rating   : SEVERE (Score 4)</text>
+
+    <text x="70" y="600" fill="#60a5fa" font-weight="bold">=== RISK EVALUATION &amp; TREATMENT (CLAUSE 9.8 / 9.9) ===</text>
+    <text x="70" y="625" fill="#f87171" font-weight="bold">ISO 21434 Risk Value    : 5 (CRITICAL RISK - HIGHEST SEVERITY)</text>
+    <text x="70" y="645" fill="#f87171">Treatment Decision      : MITIGATE_MANDATORY (CAL 4 Assurance Level)</text>
+  </g>
+
+  <!-- Right Upper Panel: Risk Card -->
+  <rect x="730" y="110" width="440" height="260" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  <text x="750" y="145" fill="#f3f4f6" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">Risk Value &amp; Goal Assignment</text>
+  <rect x="750" y="165" width="400" height="185" rx="6" fill="#090d16" stroke="#1f2937" stroke-width="1" />
+  <text x="765" y="195" fill="#ef4444" font-family="monospace" font-size="14" font-weight="bold">RISK VALUE: 5 (CAL 4)</text>
+  <text x="765" y="220" fill="#d1d5db" font-family="monospace" font-size="11">Cybersecurity Goal: [CG_01]</text>
+  <text x="765" y="240" fill="#93c5fd" font-family="monospace" font-size="11">"Ensure Cryptographic Integrity</text>
+  <text x="765" y="258" fill="#93c5fd" font-family="monospace" font-size="11"> of Radar Stream under CAN/Ethernet</text>
+  <text x="765" y="276" fill="#93c5fd" font-family="monospace" font-size="11"> Injection Attacks via SecOC/MAC."</text>
+  <text x="765" y="305" fill="#34d399" font-family="monospace" font-size="10">Traceable to Req: CSR_SEC_RADAR_042</text>
+
+  <!-- Right Lower Panel: Normative Auditor -->
+  <rect x="730" y="390" width="440" height="300" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  <text x="750" y="425" fill="#f3f4f6" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">10-Point Normative ISO 21434 Scorecard</text>
+  <rect x="750" y="445" width="400" height="40" rx="6" fill="#064e3b" />
+  <text x="765" y="470" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="bold">COMPLIANCE: 100.0% (UN R155 CERTIFIED)</text>
+
+  <!-- Audit Checklist items -->
+  <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">
+    <text x="760" y="510" fill="#10b981">✓</text>
+    <text x="780" y="510" fill="#d1d5db">Gate 1: Organizational CSMS Governance (Clause 5)</text>
+    
+    <text x="760" y="535" fill="#10b981">✓</text>
+    <text x="780" y="535" fill="#d1d5db">Gate 2: Item Definition &amp; Boundaries (Clause 9.3)</text>
+
+    <text x="760" y="560" fill="#10b981">✓</text>
+    <text x="780" y="560" fill="#d1d5db">Gate 3: Asset Identification &amp; CIA (Clause 9.4)</text>
+
+    <text x="760" y="585" fill="#10b981">✓</text>
+    <text x="780" y="585" fill="#d1d5db">Gate 4: SFOP Impact Rating Evaluation (Clause 9.5)</text>
+
+    <text x="760" y="610" fill="#10b981">✓</text>
+    <text x="780" y="610" fill="#d1d5db">Gate 5: Attack Feasibility Potential AFR (Clause 9.7)</text>
+
+    <text x="760" y="635" fill="#10b981">✓</text>
+    <text x="780" y="635" fill="#d1d5db">Gate 6: Risk Matrix &amp; CAL 4 Treatment (Clause 9.8/9.9)</text>
+
+    <text x="760" y="660" fill="#9ca3af" font-style="italic">4 Additional Clauses Satisfied (10/10 Normative Passed)</text>
+  </g>
+</svg>
